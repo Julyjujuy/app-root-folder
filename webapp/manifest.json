@@ -20,13 +20,25 @@
 			"minUI5Version": "1.120.0",
 			"libs": {
 				"sap.m": {},
-				"sap.ui.core": {}
+				"sap.ui.core": {},
+				"sap.ui.layout": {}
 			}
 		},
-        "models": {
+		"models": {
 			"": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "./model/data.json"
+			},
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "ui5.databinding.i18n.i18n",
+					"supportedLocales": [
+						"",
+						"de"
+					],
+					"fallbackLocale": ""
+				}
 			}
 		},
 		"rootView": {
